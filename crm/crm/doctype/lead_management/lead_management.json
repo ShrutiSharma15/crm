@@ -1,0 +1,265 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Lead - .#####",
+ "creation": "2026-01-05 18:15:45.252821",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contact_tab",
+  "contact_section_section",
+  "lead_name",
+  "company_name",
+  "email_id",
+  "phone_number",
+  "mobile_number",
+  "job_title",
+  "column_break_ryju",
+  "lead_source",
+  "industry",
+  "company_size",
+  "details_tab",
+  "lead_details_section_section",
+  "lead_status",
+  "lead_score",
+  "budget_range",
+  "expected_close_date",
+  "product_interest",
+  "column_break_qwje",
+  "requirements",
+  "assignment_tab",
+  "assignment_section_section",
+  "lead_owner",
+  "assigned_date",
+  "follow_up_tab",
+  "follow_up_detail_section",
+  "follow_ups",
+  "call_log_tab",
+  "call_logs_detail_section",
+  "call_logs",
+  "quotation_tab",
+  "quotation_section",
+  "quotations",
+  "opportunities_tab",
+  "opportunities_section",
+  "opportunities"
+ ],
+ "fields": [
+  {
+   "fieldname": "contact_section_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Section"
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "label": "Lead Name"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "column_break_ryju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lead_source",
+   "fieldtype": "Select",
+   "label": "Lead Source",
+   "options": "Website Form\nTrade Show\nReferral\nCold Call\nEmail\nSocial Media\nAdvertisement"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Select",
+   "label": "Industry",
+   "options": "Manufacturing\nRetail\nIT Services\nHealthcare\nConstruction\nOther"
+  },
+  {
+   "fieldname": "company_size",
+   "fieldtype": "Select",
+   "label": "Company Size",
+   "options": "1-10\n11-50\n51-200\n201-500\n500+"
+  },
+  {
+   "fieldname": "contact_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "lead_details_section_section",
+   "fieldtype": "Section Break",
+   "label": "Lead Details Section"
+  },
+  {
+   "fieldname": "lead_status",
+   "fieldtype": "Select",
+   "label": "Lead Status",
+   "options": "New\nContacted\nFollow Up\nQualified\nUnqualified\nHot Lead\nConverted\nLost"
+  },
+  {
+   "fieldname": "lead_score",
+   "fieldtype": "Int",
+   "label": "Lead Score"
+  },
+  {
+   "fieldname": "budget_range",
+   "fieldtype": "Currency",
+   "label": "Budget Range"
+  },
+  {
+   "fieldname": "expected_close_date",
+   "fieldtype": "Date",
+   "label": "Expected Close Date"
+  },
+  {
+   "fieldname": "product_interest",
+   "fieldtype": "Small Text",
+   "label": "Product Interest"
+  },
+  {
+   "fieldname": "requirements",
+   "fieldtype": "Text Editor",
+   "label": "Requirements"
+  },
+  {
+   "fieldname": "column_break_qwje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assignment_tab",
+   "fieldtype": "Tab Break",
+   "label": "Assignment"
+  },
+  {
+   "fieldname": "assignment_section_section",
+   "fieldtype": "Section Break",
+   "label": "Assignment Section"
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Link",
+   "label": "Lead Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "assigned_date",
+   "fieldtype": "Date",
+   "label": "Assigned Date"
+  },
+  {
+   "fieldname": "follow_up_tab",
+   "fieldtype": "Tab Break",
+   "label": "Follow Up"
+  },
+  {
+   "fieldname": "call_log_tab",
+   "fieldtype": "Tab Break",
+   "label": "Call Log"
+  },
+  {
+   "fieldname": "call_logs_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Call Logs detail"
+  },
+  {
+   "fieldname": "call_logs",
+   "fieldtype": "HTML",
+   "label": "Call Logs"
+  },
+  {
+   "fieldname": "follow_up_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Follow Up Detail"
+  },
+  {
+   "fieldname": "follow_ups",
+   "fieldtype": "HTML",
+   "label": "Follow Ups"
+  },
+  {
+   "fieldname": "quotation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Quotation"
+  },
+  {
+   "fieldname": "quotation_section",
+   "fieldtype": "Section Break",
+   "label": "Quotation"
+  },
+  {
+   "fieldname": "quotations",
+   "fieldtype": "HTML",
+   "label": "Quotations"
+  },
+  {
+   "fieldname": "opportunities_tab",
+   "fieldtype": "Tab Break",
+   "label": "Opportunities"
+  },
+  {
+   "fieldname": "opportunities_section",
+   "fieldtype": "Section Break",
+   "label": "Opportunities"
+  },
+  {
+   "fieldname": "opportunities",
+   "fieldtype": "HTML",
+   "label": "Opportunities"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-06 17:19:29.616555",
+ "modified_by": "Administrator",
+ "module": "crm",
+ "name": "Lead Management",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

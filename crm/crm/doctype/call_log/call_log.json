@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Call - .####",
+ "creation": "2026-01-06 10:39:40.951507",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "call_detail_section",
+  "lead",
+  "call_date",
+  "column_break_nzjx",
+  "call_duration",
+  "called_by",
+  "call_outcome_section",
+  "call_outcome",
+  "lead_response",
+  "next_action",
+  "column_break_glzp",
+  "call_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "call_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Call Detail"
+  },
+  {
+   "fieldname": "call_date",
+   "fieldtype": "Datetime",
+   "label": "Call Date"
+  },
+  {
+   "fieldname": "call_duration",
+   "fieldtype": "Duration",
+   "label": "Call Duration"
+  },
+  {
+   "fieldname": "called_by",
+   "fieldtype": "Data",
+   "label": "Called By"
+  },
+  {
+   "fieldname": "call_outcome_section",
+   "fieldtype": "Section Break",
+   "label": "Call Outcome"
+  },
+  {
+   "fieldname": "call_outcome",
+   "fieldtype": "Select",
+   "label": "Call Outcome",
+   "options": "Connected\nNo Answer\nVoicemail\nBusy\nWrong Number\nCallback Requested"
+  },
+  {
+   "fieldname": "lead_response",
+   "fieldtype": "Select",
+   "label": "Lead Response",
+   "options": "Yes - Interested\nNo - Not Interested\nMaybe - Need Follow Up"
+  },
+  {
+   "fieldname": "next_action",
+   "fieldtype": "Select",
+   "label": "Next Action",
+   "options": "Schedule Follow-Up\nSend Proposal\nSchedule Demo\nNo Action\nClose Lead"
+  },
+  {
+   "fieldname": "call_notes",
+   "fieldtype": "Text Editor",
+   "label": "Call Notes"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead Management"
+  },
+  {
+   "fieldname": "column_break_nzjx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_glzp",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-06 15:16:14.390951",
+ "modified_by": "Administrator",
+ "module": "crm",
+ "name": "Call Log",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

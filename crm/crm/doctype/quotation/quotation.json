@@ -1,0 +1,249 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "QTN-.####",
+ "creation": "2026-01-06 16:19:32.549424",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_information_section",
+  "lead",
+  "lead_name",
+  "company_name",
+  "column_break_ozah",
+  "email",
+  "phone",
+  "quotation_detail_tab",
+  "quotation_detail_section",
+  "quotation_date",
+  "valid_till",
+  "column_break_xcwd",
+  "assigned_to",
+  "status",
+  "items_and_pricing_tab",
+  "items_services_section",
+  "items",
+  "pricing_details_section",
+  "total_amount",
+  "discount_percentage",
+  "discount_amount",
+  "column_break_fyvt",
+  "tax_percentage",
+  "tax_amount",
+  "grand_total",
+  "terms_and_conditions_tab",
+  "terms_and_conditions_section",
+  "payment_terms",
+  "delivery_terms",
+  "terms_and_conditions",
+  "internal_notes_section",
+  "internal_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_information_section",
+   "fieldtype": "Section Break",
+   "label": "Lead Information"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lead",
+   "options": "Lead Management",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "lead.lead_name",
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "label": "Lead Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead.email_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead.phone_number",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ozah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quotation_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Quotation Detail"
+  },
+  {
+   "default": "Today",
+   "fieldname": "quotation_date",
+   "fieldtype": "Date",
+   "label": "Quotation Date"
+  },
+  {
+   "fieldname": "valid_till",
+   "fieldtype": "Date",
+   "label": "Valid Till"
+  },
+  {
+   "fieldname": "column_break_xcwd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Data",
+   "label": "Assigned To"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSent\nAccepted\nRejected\nExpired\nRevised"
+  },
+  {
+   "fieldname": "items_services_section",
+   "fieldtype": "Section Break",
+   "label": "Items Services"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Quotation Item"
+  },
+  {
+   "fieldname": "pricing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing Details"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount_percentage",
+   "fieldtype": "Percent",
+   "label": "Discount Percentage"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "column_break_fyvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "18",
+   "fieldname": "tax_percentage",
+   "fieldtype": "Percent",
+   "label": "Tax Percentage"
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "label": "Tax Amount",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "terms_and_conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Select",
+   "label": "Payment Terms",
+   "options": "Immediate\n15 Days\n30 Days\n45 Days\n60 Days\n90 Days\nCustom"
+  },
+  {
+   "fieldname": "delivery_terms",
+   "fieldtype": "Small Text",
+   "label": "Delivery Terms"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Text Editor",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "internal_notes_section",
+   "fieldtype": "Section Break",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Text Editor",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "quotation_detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Quotation Detail"
+  },
+  {
+   "fieldname": "items_and_pricing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Items And Pricing"
+  },
+  {
+   "fieldname": "terms_and_conditions_tab",
+   "fieldtype": "Tab Break",
+   "label": "Terms and Conditions"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-06 16:39:24.072422",
+ "modified_by": "Administrator",
+ "module": "crm",
+ "name": "Quotation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

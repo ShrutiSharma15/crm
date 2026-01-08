@@ -1,0 +1,279 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "OPP-.####",
+ "creation": "2026-01-06 16:59:33.574266",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_section",
+  "lead",
+  "lead_name",
+  "company_name",
+  "email",
+  "phone",
+  "column_break_1",
+  "opportunity_date",
+  "opportunity_owner",
+  "source",
+  "opportunity_section",
+  "opportunity_name",
+  "opportunity_type",
+  "sales_stage",
+  "column_break_2",
+  "probability",
+  "expected_close_date",
+  "actual_close_date",
+  "status",
+  "financial_section",
+  "currency",
+  "expected_revenue",
+  "weighted_amount",
+  "actual_revenue",
+  "column_break_3",
+  "budget",
+  "lost_reason",
+  "competitor_section",
+  "competitors",
+  "customer_requirements",
+  "notes_section",
+  "internal_notes",
+  "next_step",
+  "linked_section",
+  "quotation"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_section",
+   "fieldtype": "Section Break",
+   "label": "Lead Information"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lead",
+   "options": "Lead Management"
+  },
+  {
+   "fetch_from": "lead.lead_name",
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "label": "Lead Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead.email_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead.phone_number",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "opportunity_date",
+   "fieldtype": "Date",
+   "label": "Opportunity Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "opportunity_owner",
+   "fieldtype": "Data",
+   "label": "Opportunity Owner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Direct\nWebsite\nCampaign\nReferral\nPartner\nEvent\nCold Call"
+  },
+  {
+   "fieldname": "opportunity_section",
+   "fieldtype": "Section Break",
+   "label": "Opportunity Details"
+  },
+  {
+   "fieldname": "opportunity_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Opportunity Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "opportunity_type",
+   "fieldtype": "Select",
+   "label": "Opportunity Type",
+   "options": "New Business\nExisting Business\nRenewal\nUpsell\nCross-sell"
+  },
+  {
+   "fieldname": "sales_stage",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sales Stage",
+   "options": "Prospecting\nQualification\nNeeds Analysis\nProposal\nNegotiation\nClosed Won\nClosed Lost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "probability",
+   "fieldtype": "Percent",
+   "label": "Probability"
+  },
+  {
+   "fieldname": "expected_close_date",
+   "fieldtype": "Date",
+   "label": "Expected Close Date"
+  },
+  {
+   "fieldname": "actual_close_date",
+   "fieldtype": "Date",
+   "label": "Actual Close Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nIn Progress\nQuotation Sent\nWon\nLost\nOn Hold",
+   "reqd": 1
+  },
+  {
+   "fieldname": "financial_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Details"
+  },
+  {
+   "default": "INR",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "expected_revenue",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Expected Revenue"
+  },
+  {
+   "fieldname": "weighted_amount",
+   "fieldtype": "Currency",
+   "label": "Probability Weighted Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_revenue",
+   "fieldtype": "Currency",
+   "label": "Actual Revenue",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "label": "Budget"
+  },
+  {
+   "fieldname": "lost_reason",
+   "fieldtype": "Select",
+   "label": "Lost Reason",
+   "options": "Price Too High\nNo Budget\nChose Competitor\nTimeline Mismatch\nNo Response\nOther"
+  },
+  {
+   "fieldname": "competitor_section",
+   "fieldtype": "Section Break",
+   "label": "Competition & Requirements"
+  },
+  {
+   "fieldname": "competitors",
+   "fieldtype": "Small Text",
+   "label": "Competitors"
+  },
+  {
+   "fieldname": "customer_requirements",
+   "fieldtype": "Text Editor",
+   "label": "Customer Requirements"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Text Editor",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "next_step",
+   "fieldtype": "Small Text",
+   "label": "Next Step"
+  },
+  {
+   "fieldname": "linked_section",
+   "fieldtype": "Section Break",
+   "label": "Linked Documents"
+  },
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "Quotation",
+   "options": "Quotation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-06 17:47:07.070937",
+ "modified_by": "Administrator",
+ "module": "crm",
+ "name": "Opportunity",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
