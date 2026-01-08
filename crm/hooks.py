@@ -4,6 +4,13 @@ app_publisher = "crm"
 app_description = "crm"
 app_email = "crm@gmail.com"
 app_license = "mit"
+fixtures = [
+    {"dt": "Client Script"},
+    {"dt": "Server Script"},
+    {"dt": "Custom Field"},
+    {"dt": "Property Setter"},
+]
+
 
 # Apps
 # ------------------
