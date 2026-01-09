@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-09 15:32:20.800337",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "entry_number",
+  "entry_type",
+  "posting_date",
+  "from_warehouse",
+  "to_warehouse",
+  "purpose",
+  "stock_entry_item_section",
+  "entry_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "entry_number",
+   "fieldtype": "Data",
+   "label": "Entry Number"
+  },
+  {
+   "fieldname": "entry_type",
+   "fieldtype": "Select",
+   "label": "Entry Type",
+   "options": "Material Transfer\nReceipt\nIssue\nAdjustment"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "from_warehouse",
+   "fieldtype": "Link",
+   "label": "From Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "to_warehouse",
+   "fieldtype": "Link",
+   "label": "To Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Small Text",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "stock_entry_item_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Entry Item"
+  },
+  {
+   "fieldname": "entry_item",
+   "fieldtype": "Table",
+   "label": " Entry Item",
+   "options": "Stock Entry Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-09 15:56:44.399997",
+ "modified_by": "Administrator",
+ "module": "crm",
+ "name": "Stock Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

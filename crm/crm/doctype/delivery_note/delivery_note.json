@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-09 15:19:45.478464",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "delivery_number",
+  "customer",
+  "sales_order",
+  "posting_date",
+  "column_break_xjni",
+  "status",
+  "installation_address",
+  "delivery_note_item_section",
+  "note_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "delivery_number",
+   "fieldtype": "Data",
+   "label": "Delivery Number"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Data",
+   "label": "Sales Order"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "column_break_xjni",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Draft\nSubmitted\nInstalled\nCancelled"
+  },
+  {
+   "fieldname": "installation_address",
+   "fieldtype": "Text",
+   "label": "Installation Address"
+  },
+  {
+   "fieldname": "delivery_note_item_section",
+   "fieldtype": "Section Break",
+   "label": "Delivery Note Item\t"
+  },
+  {
+   "fieldname": "note_item",
+   "fieldtype": "Table",
+   "label": "Note Item\t",
+   "options": "Delivery Note Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-09 15:29:18.549940",
+ "modified_by": "Administrator",
+ "module": "crm",
+ "name": "Delivery Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

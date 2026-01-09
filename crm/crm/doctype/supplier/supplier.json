@@ -1,26 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-01-09 12:31:38.482788",
+ "creation": "2026-01-09 16:12:23.443638",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "product_name"
+  "vendor_name"
  ],
  "fields": [
   {
-   "fieldname": "product_name",
+   "fieldname": "vendor_name",
    "fieldtype": "Data",
-   "label": "product name"
+   "label": "Vendor Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-09 12:31:48.262132",
+ "modified": "2026-01-09 16:12:41.738414",
  "modified_by": "Administrator",
  "module": "crm",
- "name": "product",
+ "name": "supplier",
  "owner": "Administrator",
  "permissions": [
   {

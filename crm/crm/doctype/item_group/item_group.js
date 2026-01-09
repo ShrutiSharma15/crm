@@ -1,7 +1,7 @@
 // Copyright (c) 2026, crm and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("product", {
+// frappe.ui.form.on("Item Group", {
 // 	refresh(frm) {
 
 // 	},
